@@ -19,10 +19,10 @@ import Navbar from './features/navbar/Navbar';
 
 
 const router = createBrowserRouter([
-  // {
-  //   path: '/',
-  //   element: <Home />
-  // },
+  {
+    path: '/',
+    element: <Navbar />
+  },
   {
     path: '/login',
     element: <LoginPage />
@@ -40,7 +40,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/> */}
       <RouterProvider router={router} />
       {/* <Navbar/> */}
     </>
